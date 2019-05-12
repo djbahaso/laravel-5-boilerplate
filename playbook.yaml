@@ -5,7 +5,7 @@
         name: python-docker
         state: present
     - name: run docker container
-      docker_container
+      docker_container:
         image: denzelo/boiler-plate
         detach: yes
         interactive: yes
