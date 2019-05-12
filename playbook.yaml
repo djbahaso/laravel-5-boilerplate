@@ -1,7 +1,9 @@
 - hosts: centos
   tasks:
-    - name: python-docker
-      state: present
+    - name: install python
+      yum:
+        name: python-docker
+        state: present
     - name: run docker container
       docker_container
         image: denzelo/boiler-plate
